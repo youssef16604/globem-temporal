@@ -1,0 +1,17 @@
+# GLOBEM data and anything derived from participant rows must never be committed
+data/
+GLOBEM_extracted/
+GLOBEM_JMIR_outputs/
+**/checkpoints/
+*.zip
+*.pkl
+*.parquet
+*.pt
+*.csv
+!results/**/*.csv
+
+# Python and Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+executed.ipynb
