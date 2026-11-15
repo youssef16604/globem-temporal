@@ -1,0 +1,44 @@
+**Top SHAP feature clusters on the latest forward split (mean over seeds, top-20 frequency).**
+
+| item                                                                                       |   mean_abs_shap |   mean_signed_shap |   median_rank |   top20_frequency | modality   |
+|:-------------------------------------------------------------------------------------------|----------------:|-------------------:|--------------:|------------------:|:-----------|
+| f_slp:fitbit_sleep_summary_rapids_sumdurationinbedmain:weekend_mean                        |          0.0671 |            -0.0032 |        4.5000 |            0.9000 | Sleep      |
+| f_wifi:phone_wifi_connected_rapids_countscans:afternoon_mean_selfdev_causal                |          0.0527 |             0.0021 |       18.0000 |            0.1000 | Wi-Fi      |
+| f_screen:phone_screen_rapids_countepisodeunlock_locmap_home:night_mean                     |          0.0512 |            -0.0041 |       12.5000 |            0.6000 | Screen     |
+| f_steps:fitbit_steps_intraday_rapids_sumsteps:afternoon_std                                |          0.0497 |            -0.0060 |       22.0000 |            0.5000 | Steps      |
+| f_slp:fitbit_sleep_summary_rapids_avgdurationinbedmain:allday_mean                         |          0.0476 |            -0.0027 |       27.0000 |            0.5000 | Sleep      |
+| f_wifi:phone_wifi_connected_rapids_uniquedevices_norm:evening_mean                         |          0.0430 |            -0.0200 |       32.0000 |            0.3000 | Wi-Fi      |
+| f_steps:fitbit_steps_intraday_rapids_maxdurationactivebout_norm:afternoon_mean             |          0.0430 |            -0.0175 |       25.0000 |            0.5000 | Steps      |
+| f_slp:fitbit_sleep_intraday_rapids_countepisodeasleepunifiedmain:morning_std               |          0.0399 |            -0.0046 |       36.5000 |            0.4000 | Sleep      |
+| f_slp:fitbit_sleep_intraday_rapids_sumdurationasleepunifiedmain:weekday_mean               |          0.0390 |            -0.0074 |       18.5000 |            0.5000 | Sleep      |
+| f_screen:phone_screen_rapids_firstuseafter00unlock_locmap_home:weekend_mean_selfdev_causal |          0.0389 |             0.0059 |       26.5000 |            0.4000 | Screen     |
+| f_screen:phone_screen_rapids_sumdurationunlock_locmap_home:evening_mean                    |          0.0375 |            -0.0006 |       34.0000 |            0.4000 | Screen     |
+| f_loc:phone_locations_doryab_numberlocationtransitions:allday_std                          |          0.0373 |            -0.0178 |       20.0000 |            0.5000 | Location   |
+| f_screen:phone_screen_rapids_sumdurationunlock_locmap_home:14dhist_last                    |          0.0363 |            -0.0213 |       27.0000 |            0.4000 | Screen     |
+| f_blue:phone_bluetooth_doryab_stdscansothers:weekday_mean                                  |          0.0357 |            -0.0049 |       29.5000 |            0.1000 | Bluetooth  |
+| f_wifi:phone_wifi_connected_rapids_uniquedevices_norm:night_mean                           |          0.0353 |            -0.0180 |       53.5000 |            0.4000 | Wi-Fi      |
+| f_loc:phone_locations_barnett_circdnrtn_norm:weekend_mean                                  |          0.0350 |             0.0014 |       25.5000 |            0.3000 | Location   |
+| f_slp:fitbit_sleep_intraday_rapids_sumdurationasleepunifiedmain:night_std                  |          0.0348 |            -0.0038 |       37.0000 |            0.4000 | Sleep      |
+| f_blue:phone_bluetooth_doryab_uniquedevicesown_norm:morning_mean                           |          0.0345 |            -0.0019 |       50.0000 |            0.3000 | Bluetooth  |
+| f_call:phone_calls_rapids_incoming_timefirstcall_norm:14dhist_mean                         |          0.0337 |            -0.0019 |       27.0000 |            0.3000 | Calls      |
+| f_call:phone_calls_rapids_incoming_maxduration:14dhist_mean                                |          0.0333 |             0.0120 |       28.5000 |            0.3000 | Calls      |
+| f_steps:fitbit_steps_intraday_rapids_maxdurationactivebout:allday_std                      |          0.0332 |            -0.0098 |      171.0000 |            0.4000 | Steps      |
+| f_call:phone_calls_rapids_outgoing_count:evening_mean                                      |          0.0316 |            -0.0028 |       21.0000 |            0.5000 | Calls      |
+| f_screen:phone_screen_rapids_mindurationunlock_locmap_exercise:evening_mean                |          0.0299 |            -0.0002 |       40.0000 |            0.2000 | Screen     |
+| f_slp:fitbit_sleep_intraday_rapids_sumdurationasleepunifiedmain:14dhist_mean               |          0.0297 |            -0.0086 |       25.0000 |            0.4000 | Sleep      |
+| f_loc:phone_locations_locmap_percent_in_locmap_exercise:weekend_last_selfdev_causal        |          0.0292 |            -0.0012 |       63.5000 |            0.4000 | Location   |
+| f_steps:fitbit_steps_intraday_rapids_stddurationactivebout:allday_std                      |          0.0286 |            -0.0058 |       51.0000 |            0.2000 | Steps      |
+| f_screen:phone_screen_rapids_stddurationunlock_locmap_home:evening_last                    |          0.0282 |             0.0052 |       52.5000 |            0.2000 | Screen     |
+| f_wifi:phone_wifi_connected_rapids_uniquedevices:night_mean                                |          0.0275 |             0.0064 |      117.5000 |            0.3000 | Wi-Fi      |
+| f_loc:phone_locations_doryab_timeathome_norm:night_std                                     |          0.0269 |            -0.0051 |       34.5000 |            0.3000 | Location   |
+| f_screen:phone_screen_rapids_sumdurationunlock:7dhist_std                                  |          0.0267 |            -0.0002 |       71.0000 |            0.2000 | Screen     |
+| f_loc:phone_locations_doryab_maxlengthstayatclusters:allday_std                            |          0.0264 |            -0.0115 |       44.5000 |            0.2000 | Location   |
+| f_screen:phone_screen_rapids_firstuseafter00unlock_locmap_home:morning_std                 |          0.0257 |            -0.0020 |      151.5000 |            0.2000 | Screen     |
+| f_steps:fitbit_steps_intraday_rapids_countepisodeactivebout:morning_mean_selfdev_causal    |          0.0256 |            -0.0014 |       74.0000 |            0.2000 | Steps      |
+| f_call:phone_calls_rapids_missed_countmostfrequentcontact:weekend_mean_selfdev_causal      |          0.0256 |             0.0038 |       76.0000 |            0.1000 | Calls      |
+| f_call:phone_calls_rapids_outgoing_timelastcall_norm:weekday_mean                          |          0.0250 |             0.0006 |       74.0000 |            0.2000 | Calls      |
+| f_blue:phone_bluetooth_doryab_uniquedevicesown:morning_mean_selfdev_causal                 |          0.0249 |            -0.0023 |       79.5000 |            0.2000 | Bluetooth  |
+| f_call:phone_calls_rapids_missed_count:afternoon_mean                                      |          0.0241 |             0.0038 |       54.5000 |            0.2000 | Calls      |
+| f_steps:fitbit_steps_summary_rapids_stdsumsteps:weekend_std                                |          0.0239 |             0.0009 |       69.5000 |            0.0000 | Steps      |
+| f_blue:phone_bluetooth_doryab_stdscansown:night_std                                        |          0.0232 |            -0.0137 |       68.0000 |            0.1000 | Bluetooth  |
+| f_screen:phone_screen_rapids_firstuseafter00unlock_locmap_home:allday_last_selfdev_causal  |          0.0224 |             0.0010 |       87.5000 |            0.1000 | Screen     |

@@ -1,0 +1,10 @@
+Analysis,Protocol,Family,Comparison,Years,Delta_AUC,CI_lo,CI_hi,p,Equivalent,p_Holm,Significant (Holm)
+bdi,Forward-chaining,vs XGBoost,Dummy - XGBoost,"2019, 2020, 2021",-0.093,-0.1856,0.0006,0.054,False,0.162,False
+bdi,Forward-chaining,vs XGBoost,LogReg - XGBoost,"2019, 2020, 2021",-0.0017,-0.0747,0.0727,0.949,False,1.0,False
+bdi,Forward-chaining,vs XGBoost,MLP-ERM - XGBoost,"2019, 2020, 2021",-0.0213,-0.1003,0.063,0.582,False,1.0,False
+bdi,Leave-one-year-out,vs XGBoost,Dummy - XGBoost,"2018, 2019, 2020, 2021",-0.0991,-0.174,-0.0215,0.012,False,0.036,True
+bdi,Leave-one-year-out,vs XGBoost,LogReg - XGBoost,"2018, 2019, 2020, 2021",0.0139,-0.0415,0.0722,0.624,False,1.0,False
+bdi,Leave-one-year-out,vs XGBoost,MLP-ERM - XGBoost,"2018, 2019, 2020, 2021",-0.0016,-0.0632,0.0615,0.981,False,1.0,False
+bdi,Participant-disjoint,vs XGBoost,Dummy - XGBoost,,-0.105,-0.2634,0.0604,0.219,False,0.657,False
+bdi,Participant-disjoint,vs XGBoost,LogReg - XGBoost,,-0.009,-0.1158,0.1116,0.877,False,0.877,False
+bdi,Participant-disjoint,vs XGBoost,MLP-ERM - XGBoost,,-0.0551,-0.192,0.084,0.437,False,0.874,False

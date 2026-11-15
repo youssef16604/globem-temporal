@@ -1,14 +1,14 @@
-# Versions pinned below are those printed by the run that produced the manuscript results.
-# The torch build used was 2.11.0+cu130 (CUDA).
+# Versions are those recorded for the run that produced the manuscript results
+# (results/run_manifest.json; Python 3.13.15; torch build 2.11.0+cu130 on an NVIDIA A100).
 numpy==2.1.3
 pandas==2.2.3
+scikit-learn==1.6.1
 torch==2.11.0
 xgboost==3.4.1
 optuna==5.0.0
-# Not printed by the notebook: pin these from run_manifest.json (scikit-learn) or `pip freeze` on the same runtime.
-scikit-learn
+matplotlib==3.10.0
+# Not recorded by the run: pin these from `pip freeze` on the same runtime if exact versions matter.
 scipy
-matplotlib
 tabulate
 pyarrow
 jupyter

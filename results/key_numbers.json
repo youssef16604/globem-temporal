@@ -1,0 +1,179 @@
+{
+  "loyo_minus_forward_by_year": {
+    "2019": {
+      "mean_delta": 0.015,
+      "models_positive": 5,
+      "models": 5,
+      "significant_holm": 0
+    },
+    "2020": {
+      "mean_delta": 0.052,
+      "models_positive": 7,
+      "models": 7,
+      "significant_holm": 0
+    }
+  },
+  "forward_pooled_test_years": "2020, 2021",
+  "forward_best_model": "Transformer",
+  "forward_best_auc": [
+    0.5769,
+    0.5259,
+    0.6255
+  ],
+  "forward_auc_by_model": {
+    "Transformer": [
+      0.5769,
+      0.5259,
+      0.6255
+    ],
+    "MLP-IRM": [
+      0.5754,
+      0.5325,
+      0.619
+    ],
+    "XGBoost": [
+      0.5741,
+      0.5313,
+      0.6168
+    ],
+    "MLP-GroupDRO": [
+      0.5729,
+      0.5316,
+      0.6147
+    ],
+    "GRU": [
+      0.5718,
+      0.529,
+      0.6154
+    ],
+    "LogReg": [
+      0.5634,
+      0.5227,
+      0.6037
+    ],
+    "MLP-ERM": [
+      0.5616,
+      0.5197,
+      0.6058
+    ],
+    "Dummy": [
+      0.5046,
+      0.4792,
+      0.5288
+    ]
+  },
+  "forward_significant_vs_xgb_after_holm": 1,
+  "forward_comparisons_vs_xgb": 7,
+  "forward_dg_vs_erm": {
+    "MLP-GroupDRO - MLP-ERM": [
+      0.0113,
+      -0.031,
+      0.0516,
+      1.0
+    ],
+    "MLP-IRM - MLP-ERM": [
+      0.0138,
+      -0.0297,
+      0.0576,
+      1.0
+    ]
+  },
+  "forward_best_ppv_at_5pct": {
+    "model": "MLP-IRM",
+    "ppv": 0.0639,
+    "ci": [
+      0.0548,
+      0.0788
+    ],
+    "false_alerts_per_true_alert": 14.65
+  },
+  "forward_best_ppv_at_10pct": {
+    "model": "MLP-IRM",
+    "ppv": 0.1259,
+    "ci": [
+      0.109,
+      0.1529
+    ],
+    "false_alerts_per_true_alert": 6.94
+  },
+  "year_auc_all_features": 0.9962,
+  "year_auc::No missingness indicators (median)": 0.9961,
+  "year_auc::No missingness indicators (hot-deck)": 0.9957,
+  "year_auc::Availability & platform only": 0.9595,
+  "year_auc::All except Wi-Fi": 0.995,
+  "year_auc::Wi-Fi only": 0.912,
+  "year_auc::Pre-COVID vs COVID AUC": 0.9977,
+  "year_auc::2018 vs 2019 AUC": 0.9984,
+  "year_auc::2020 vs 2021 AUC": 0.9787,
+  "year_auc::Year AUC excl. 2018 (macro OvR)": 0.994,
+  "year_classifier_shap_share_missingness": 0.1146,
+  "year_classifier_shap_share_wifi": 0.1691,
+  "stability_cluster_Within-year split-half": {
+    "jaccard20": [
+      0.8359,
+      0.6667,
+      1.0
+    ],
+    "spearman_top": [
+      0.9442,
+      0.9075,
+      0.9718
+    ],
+    "spearman_full": 0.9978
+  },
+  "stability_cluster_Seed refit (same year)": {
+    "jaccard20": [
+      0.13,
+      0.0526,
+      0.25
+    ],
+    "spearman_top": [
+      0.2822,
+      0.14,
+      0.4247
+    ],
+    "spearman_full": 0.323
+  },
+  "stability_cluster_Same model, different years": {
+    "jaccard20": [
+      0.6064,
+      0.3793,
+      0.8182
+    ],
+    "spearman_top": [
+      0.7494,
+      0.6352,
+      0.8778
+    ],
+    "spearman_full": 0.9922
+  },
+  "stability_cluster_Cross-year (year-specific models)": {
+    "jaccard20": [
+      0.0351,
+      0.0,
+      0.1111
+    ],
+    "spearman_top": [
+      0.157,
+      0.0327,
+      0.3138
+    ],
+    "spearman_full": 0.2275
+  },
+  "spearman_top_cluster_crossyear_vs_splithalf": [
+    0.157,
+    0.9442
+  ],
+  "spearman_top_construct_crossyear_vs_splithalf": [
+    0.601,
+    0.9917
+  ],
+  "spearman_top_modality_crossyear_vs_splithalf": [
+    0.8909,
+    0.992
+  ],
+  "n_windows": 7713,
+  "n_participant_years": 702,
+  "seeds": 10,
+  "bootstrap_replicates": 2000
+}

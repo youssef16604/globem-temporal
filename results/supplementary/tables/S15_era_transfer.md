@@ -1,0 +1,10 @@
+**Depression AUC within and across pre-COVID/COVID eras (XGBoost, simplified pipeline).**
+
+| Era contrast      | Train → test     |    AUC |   AUC_lo |   AUC_hi |
+|:------------------|:-----------------|-------:|---------:|---------:|
+| Within pre-COVID  | 2018 → 2019      | 0.5434 |   0.4894 |   0.6000 |
+| Pre-COVID → COVID | 2018+2019 → 2020 | 0.5758 |   0.5166 |   0.6318 |
+| Pre-COVID → COVID | 2018+2019 → 2021 | 0.5664 |   0.5139 |   0.6148 |
+| Within COVID      | 2020 → 2021      | 0.5847 |   0.5312 |   0.6389 |
+| COVID → pre-COVID | 2020+2021 → 2018 | 0.5365 |   0.4803 |   0.5879 |
+| COVID → pre-COVID | 2020+2021 → 2019 | 0.5449 |   0.4978 |   0.5961 |

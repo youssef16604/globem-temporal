@@ -1,0 +1,52 @@
+kind,main,name,caption,file
+figure,True,Fig1_evaluation_framework,"Evaluation framework: forward-chaining (primary), leave-one-year-out and participant-disjoint protocols.",main_figures/Fig1_evaluation_framework.png
+figure,True,Fig2_year_vs_depression_auc,"Collection-year identifiability versus depression-risk discrimination, overall and across feature subsets.",main_figures/Fig2_year_vs_depression_auc.png
+figure,True,Fig3_performance,"Depression-risk ROC AUC by protocol, test year and model. Pooled estimates average the test years shared by every model (GroupDRO/IRM need two training years, so the first forward year is not pooled).",main_figures/Fig3_performance.png
+figure,True,Fig4_calibration_ppv,Calibration of forward-chaining predictions and implied positive predictive value across deployment prevalence (bands: 95% CI for XGBoost and the best model at 10%).,main_figures/Fig4_calibration_ppv.png
+figure,True,Fig5_explanation_stability,"Explanation stability: within-year, seed-refit, same-model-across-year and cross-year agreement of SHAP rankings at three levels of aggregation.",main_figures/Fig5_explanation_stability.png
+table,True,Table1_cohorts,"Cohort composition, label source and prevalence by collection year.",main_tables/Table1_cohorts.csv
+table,True,Table2_pooled_performance,Pooled ROC AUC (95% CI from the two-level bootstrap) by protocol and model: primary columns pool the test years shared by every model; the last two columns pool all years available to each model.,main_tables/Table2_pooled_performance.csv
+table,False,S01_label_sources,Weekly label construction and survey columns per year.,supplementary/tables/S01_label_sources.csv
+table,False,S02_pid_linkage,Participant-ID overlap across years in the released data (IDs do not link).,supplementary/tables/S02_pid_linkage.csv
+table,False,S03_split_composition,Composition of every evaluation split (views and computed splits).,supplementary/tables/S03_split_composition.csv
+table,False,S04_model_configurations,Model configurations and hyperparameter search spaces.,supplementary/tables/S04_model_configurations.csv
+table,False,S05_hpo_selected_parameters,"Optuna results per analysis, model and outer split (inner validation only).",supplementary/tables/S05_hpo_selected_parameters.csv
+table,False,S06_full_results,"All metrics (mean ± SD over seeds) per analysis, view and model.",supplementary/tables/S06_full_results.csv
+table,False,S07_bootstrap_by_view,"Two-level bootstrap 95% CIs per view and model, with seed, participant and total SDs.",supplementary/tables/S07_bootstrap_by_view.csv
+table,False,S08_paired_comparisons_pooled,Pooled paired comparisons (Holm-adjusted within family; equivalence margin ±0.02 AUC).,supplementary/tables/S08_paired_comparisons_pooled.csv
+table,False,S09_paired_comparisons_by_view,Per-view paired comparisons against XGBoost (Holm-adjusted within view).,supplementary/tables/S09_paired_comparisons_by_view.csv
+table,False,S10_calibration,"Calibration slope, calibration-in-the-large, ECE and Brier (mean, SD over views and seeds).",supplementary/tables/S10_calibration.csv
+table,False,S11_ppv_by_prevalence,"PPV, NPV, alerts per 1,000 and false alerts per true alert at assumed prevalences.",supplementary/tables/S11_ppv_by_prevalence.csv
+table,False,S12_year_classifier_variants,"Collection-year classifier AUC across feature subsets, eras and imputation schemes.",supplementary/tables/S12_year_classifier_variants.csv
+table,False,S13_year_vs_depression_variants,Year AUC and forward-chaining depression AUC on the same feature subsets.,supplementary/tables/S13_year_vs_depression_variants.csv
+table,False,S14_year_classifier_shap_shares,Share (%) of year-classifier |SHAP| by modality and feature type.,supplementary/tables/S14_year_classifier_shap_shares.csv
+table,False,S15_era_transfer,"Depression AUC within and across pre-COVID/COVID eras (XGBoost, simplified pipeline).",supplementary/tables/S15_era_transfer.csv
+table,False,S16_explanation_stability,Explanation-stability summary by comparison type and aggregation level.,supplementary/tables/S16_explanation_stability.csv
+table,False,S17_same_model_year_permutation,Same-model year-partition permutation test (lower similarity than random partitions => year-dependent explanations).,supplementary/tables/S17_same_model_year_permutation.csv
+table,False,S18_kendall_w,Kendall's W across LOYO models and across seeds within year.,supplementary/tables/S18_kendall_w.csv
+table,False,S19_top_clusters_latest_year,"Top SHAP feature clusters on the latest forward split (mean over seeds, top-20 frequency).",supplementary/tables/S19_top_clusters_latest_year.csv
+table,False,S20_top_constructs_latest_year,Top behavioural constructs on the latest forward split.,supplementary/tables/S20_top_constructs_latest_year.csv
+table,False,S21_modality_shares,"Modality share of |SHAP| by held-out year (mean, SD over seeds).",supplementary/tables/S21_modality_shares.csv
+table,False,S22_sensitivity_2018_summary,Do conclusions change when 2018 (PANAS-derived labels) is excluded? Includes BDI-II consistent-outcome results.,supplementary/tables/S22_sensitivity_2018_summary.csv
+table,False,S23_sensitivity_2018_by_model,Main vs 2018-excluded pooled AUC per model on identical test years (paired).,supplementary/tables/S23_sensitivity_2018_by_model.csv
+table,False,S24_bdi_endterm_pooled,End-of-term BDI-II (> 13) outcome: pooled AUC by protocol and model.,supplementary/tables/S24_bdi_endterm_pooled.csv
+table,False,S25_bdi_endterm_comparisons,End-of-term BDI-II outcome: paired comparisons.,supplementary/tables/S25_bdi_endterm_comparisons.csv
+table,False,S26_norm_ablation,"`_norm` ablation (tabular models): paired differences, excluded minus included.",supplementary/tables/S26_norm_ablation.csv
+table,False,S27_permutation_test,User-level label-permutation negative control (tuned XGBoost).,supplementary/tables/S27_permutation_test.csv
+table,False,S28_run_quality,Collapsed runs and runs with inner-validation AUC < 0.52.,supplementary/tables/S28_run_quality.csv
+table,False,S29_daily_missingness,Missing daily observations (%) by modality and year.,supplementary/tables/S29_daily_missingness.csv
+table,False,S30_platform_by_year,Device platform of participants by year.,supplementary/tables/S30_platform_by_year.csv
+table,False,S31_per_seed_results,"Per-seed results for every analysis, split and model.",supplementary/tables/S31_per_seed_results.csv
+table,False,S32_runtime,Runtime per pipeline stage (this session).,supplementary/tables/S32_runtime.csv
+table,False,S33_bdi_label_source,End-of-term BDI-II label construction per year (strict: no fallback definition).,supplementary/tables/S33_bdi_label_source.csv
+table,False,S34_channel_filter_by_split,Raw channels kept by the training-only missingness rule for each split versus a pooled all-years rule.,supplementary/tables/S34_channel_filter_by_split.csv
+table,False,S35_loyo_vs_forward_same_test_year,Paired comparison on the same test participants and bootstrap resamples: leave-one-year-out (later year(s) added to training) minus forward-chaining. Differences combine later-year data and a larger training set; Holm-adjusted across models and years.,supplementary/tables/S35_loyo_vs_forward_same_test_year.csv
+figure,False,S_Fig01_confusion_matrices,"Confusion matrices (mean counts over seeds; rows true 0/1, columns predicted 0/1) for forward-chaining views.",supplementary/figures/S_Fig01_confusion_matrices.png
+figure,False,S_Fig02_hpo_default_vs_tuned,Inner-validation AUC of the default configuration (trial 0) versus the Optuna-selected configuration.,supplementary/figures/S_Fig02_hpo_default_vs_tuned.png
+figure,False,S_Fig03_sensitivity_ex2018,Pooled AUC on identical test years with and without 2018 in training.,supplementary/figures/S_Fig03_sensitivity_ex2018.png
+figure,False,S_Fig04_bdi_endterm,Pooled AUC for the end-of-term BDI-II outcome.,supplementary/figures/S_Fig04_bdi_endterm.png
+figure,False,S_Fig05_norm_ablation,Paired AUC differences when `_norm` features are removed.,supplementary/figures/S_Fig05_norm_ablation.png
+figure,False,S_Fig06_era_transfer,XGBoost AUC within vs across pre-COVID/COVID eras.,supplementary/figures/S_Fig06_era_transfer.png
+figure,False,S_Fig07_year_classifier_shap,"Year-classifier attribution by modality and feature type (value, missingness, self-deviation, availability).",supplementary/figures/S_Fig07_year_classifier_shap.png
+figure,False,S_Fig08_permutation_null,Label-permutation null distributions with the observed seed-mean AUC.,supplementary/figures/S_Fig08_permutation_null.png
+figure,False,S_Fig09_missingness_heatmap,Missing daily observations by modality and collection year.,supplementary/figures/S_Fig09_missingness_heatmap.png

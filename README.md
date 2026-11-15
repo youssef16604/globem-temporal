@@ -13,7 +13,7 @@ After obtaining access, either place the PhysioNet zip in the folder given by `G
 
 ## Requirements
 
-Python 3 with the packages in `requirements.txt`. A CUDA GPU with high RAM is strongly recommended; the notebook
+Python 3.13 with the packages in `requirements.txt`. A CUDA GPU with high RAM is strongly recommended; the notebook
 also runs on CPU, but the full configuration is then impractically slow.
 
 ```bash
@@ -60,11 +60,18 @@ written to `supplementary/tables/S05_hpo_selected_parameters.csv`, and the searc
 `S04_model_configurations.csv`. The mapping from engineered features to behavioural constructs and sensing
 modalities is the function `parse_feature` in Section 6.
 
+## Results included
+
+`results/` holds the aggregate outputs of the run reported in the manuscript: all figures and tables,
+`key_numbers.json` and `run_manifest.json`. See `results/README.md`. The file paths in the table above are relative
+to that folder.
+
 ## Reproducibility notes
 
 * All seeds are fixed in the configuration cell: split seed 42, tuning seed 1000, evaluation seeds 0 to 9.
 * Each Optuna study has a 2,400-second limit, so a re-tuned run can select different hyperparameters on different
-  hardware. The configurations used for the manuscript are those in table S05.
+  hardware. The configurations used for the manuscript are in
+  `results/supplementary/tables/S05_hpo_selected_parameters.csv`.
 * Neural-network results can differ slightly across GPU models and library versions.
 * Checkpoints are keyed by a fingerprint of the code, settings and inputs they depend on. Editing a function
   invalidates the stages that depend on it, which are then recomputed.

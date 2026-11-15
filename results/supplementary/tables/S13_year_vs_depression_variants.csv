@@ -1,0 +1,14 @@
+Variant,Features,Year AUC (macro OvR),"Depression AUC (forward, pooled)",Dep AUC lo,Dep AUC hi
+All features,14369,0.9962,0.5633,0.5294,0.5954
+No missingness indicators (median),11090,0.9961,0.5525,0.5187,0.585
+No missingness indicators (hot-deck),11090,0.9957,0.5684,0.5309,0.6046
+Missingness indicators only,3279,0.9857,0.5419,0.5091,0.5745
+Location only,2809,0.9893,0.5284,0.4962,0.5621
+Screen only,2885,0.9625,0.5437,0.5111,0.5754
+Calls only,2091,0.8412,0.5165,0.4867,0.5457
+Bluetooth only,2797,0.9864,0.52,0.4861,0.5549
+Steps only,1525,0.9457,0.5675,0.5334,0.5993
+Sleep only,2001,0.8543,0.5472,0.5148,0.5789
+Wi-Fi only,259,0.912,0.4958,0.4649,0.5267
+All except Wi-Fi,14110,0.995,0.5613,0.5286,0.5937
+Availability & platform only,13,0.9595,0.5122,0.4845,0.5401

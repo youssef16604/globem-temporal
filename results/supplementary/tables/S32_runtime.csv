@@ -1,0 +1,20 @@
+stage,seconds
+Load raw data,107.6
+Clean features,13.7
+Build windows,12.7
+Self-deviation features,1.0
+Build BDI-II end-term windows,1.8
+Fingerprint data and preprocessing,0.5
+Pooled attribution cluster map,0.8
+Train analysis: main,96.1
+Train analysis: ex2018,70.8
+Train analysis: bdi,42.8
+Train analysis: normabl,16.5
+Two-level bootstrap and comparisons,155.0
+Paired leave-one-year-out vs forward-chaining (same test years),0.0
+Calibration,4.8
+Permutation negative control,1186.0
+Domain shift: year classifiers (out-of-fold AUC and SHAP),1.4
+Domain shift: depression AUC on the same feature subsets,0.8
+Domain shift: era transfer,0.8
+Explanation stability,0.9

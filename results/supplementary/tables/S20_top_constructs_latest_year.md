@@ -1,0 +1,44 @@
+**Top behavioural constructs on the latest forward split.**
+
+| item                                                                           |   mean_abs_shap |   mean_signed_shap |   median_rank |   top20_frequency | modality   |
+|:-------------------------------------------------------------------------------|----------------:|-------------------:|--------------:|------------------:|:-----------|
+| f_screen:phone_screen_rapids_firstuseafter00unlock_locmap_home                 |          0.2911 |            -0.0064 |        1.0000 |            1.0000 | Screen     |
+| f_screen:phone_screen_rapids_firstuseafter00unlock                             |          0.2276 |            -0.0177 |        4.0000 |            1.0000 | Screen     |
+| f_slp:fitbit_sleep_intraday_rapids_sumdurationasleepunifiedmain                |          0.2245 |            -0.0294 |        4.5000 |            0.9000 | Sleep      |
+| f_screen:phone_screen_rapids_countepisodeunlock_locmap_home                    |          0.2107 |            -0.0084 |        7.5000 |            0.9000 | Screen     |
+| f_screen:phone_screen_rapids_sumdurationunlock_locmap_home                     |          0.2091 |            -0.0231 |        6.0000 |            1.0000 | Screen     |
+| f_loc:phone_locations_doryab_timeathome                                        |          0.1970 |            -0.0232 |        8.5000 |            1.0000 | Location   |
+| f_steps:fitbit_steps_intraday_rapids_maxdurationactivebout                     |          0.1905 |            -0.0259 |        6.0000 |            0.8000 | Steps      |
+| f_blue:phone_bluetooth_doryab_uniquedevicesown                                 |          0.1840 |            -0.0109 |       13.5000 |            0.8000 | Bluetooth  |
+| f_loc:phone_locations_doryab_varspeed                                          |          0.1688 |             0.0090 |       11.0000 |            0.9000 | Location   |
+| f_steps:fitbit_steps_intraday_rapids_stddurationactivebout                     |          0.1658 |            -0.0204 |       14.0000 |            0.7000 | Steps      |
+| f_loc:phone_locations_doryab_timeattop1location                                |          0.1611 |             0.0018 |       13.5000 |            0.6000 | Location   |
+| f_steps:fitbit_steps_intraday_rapids_maxsteps                                  |          0.1557 |             0.0036 |       17.0000 |            0.7000 | Steps      |
+| f_loc:phone_locations_doryab_loglocationvariance                               |          0.1509 |             0.0020 |       16.0000 |            0.7000 | Location   |
+| f_screen:phone_screen_rapids_mindurationunlock                                 |          0.1498 |             0.0047 |       19.5000 |            0.5000 | Screen     |
+| f_wifi:phone_wifi_connected_rapids_uniquedevices                               |          0.1446 |            -0.0367 |       25.0000 |            0.4000 | Wi-Fi      |
+| f_screen:phone_screen_rapids_stddurationunlock_locmap_home                     |          0.1436 |             0.0070 |       19.5000 |            0.6000 | Screen     |
+| f_call:phone_calls_rapids_outgoing_timelastcall                                |          0.1408 |             0.0023 |       20.0000 |            0.5000 | Calls      |
+| f_blue:phone_bluetooth_doryab_countscansleastfrequentdeviceacrosssegmentsown   |          0.1363 |            -0.0043 |       18.0000 |            0.6000 | Bluetooth  |
+| f_loc:phone_locations_doryab_avgspeed                                          |          0.1363 |             0.0110 |       20.0000 |            0.6000 | Location   |
+| f_steps:fitbit_steps_intraday_rapids_maxdurationsedentarybout                  |          0.1353 |            -0.0060 |       20.5000 |            0.5000 | Steps      |
+| f_screen:phone_screen_rapids_maxdurationunlock_locmap_home                     |          0.1337 |             0.0068 |       22.0000 |            0.5000 | Screen     |
+| f_blue:phone_bluetooth_doryab_meanscansall                                     |          0.1336 |             0.0081 |       20.5000 |            0.5000 | Bluetooth  |
+| f_loc:phone_locations_doryab_numberlocationtransitions                         |          0.1331 |            -0.0418 |       38.0000 |            0.3000 | Location   |
+| f_loc:phone_locations_doryab_maxlengthstayatclusters                           |          0.1321 |            -0.0200 |       21.5000 |            0.4000 | Location   |
+| f_blue:phone_bluetooth_doryab_stdscansothers                                   |          0.1263 |            -0.0103 |       25.5000 |            0.3000 | Bluetooth  |
+| f_call:phone_calls_rapids_incoming_timefirstcall                               |          0.1262 |            -0.0008 |       26.0000 |            0.4000 | Calls      |
+| f_blue:phone_bluetooth_doryab_stdscansall                                      |          0.1248 |            -0.0010 |       25.0000 |            0.3000 | Bluetooth  |
+| f_loc:phone_locations_doryab_timeattop2location                                |          0.1237 |             0.0195 |       25.0000 |            0.2000 | Location   |
+| f_screen:phone_screen_rapids_mindurationunlock_locmap_home                     |          0.1231 |             0.0006 |       28.0000 |            0.1000 | Screen     |
+| f_screen:phone_screen_rapids_countepisodeunlock                                |          0.1230 |            -0.0029 |       31.5000 |            0.3000 | Screen     |
+| f_blue:phone_bluetooth_doryab_countscansmostfrequentdevicewithinsegmentsothers |          0.1222 |            -0.0018 |       33.0000 |            0.2000 | Bluetooth  |
+| f_call:phone_calls_rapids_outgoing_timefirstcall                               |          0.1184 |            -0.0017 |       30.0000 |            0.3000 | Calls      |
+| f_screen:phone_screen_rapids_sumdurationunlock                                 |          0.1158 |            -0.0068 |       39.0000 |            0.3000 | Screen     |
+| f_blue:phone_bluetooth_doryab_meanscansothers                                  |          0.1149 |             0.0004 |       32.0000 |            0.2000 | Bluetooth  |
+| f_screen:phone_screen_rapids_stddurationunlock                                 |          0.1127 |            -0.0040 |       35.5000 |            0.3000 | Screen     |
+| f_steps:fitbit_steps_intraday_rapids_avgdurationactivebout                     |          0.1105 |            -0.0102 |       29.5000 |            0.1000 | Steps      |
+| f_call:phone_calls_rapids_missed_timefirstcall                                 |          0.1085 |             0.0053 |       34.0000 |            0.0000 | Calls      |
+| f_steps:fitbit_steps_intraday_rapids_countepisodeactivebout                    |          0.1052 |             0.0043 |       43.5000 |            0.0000 | Steps      |
+| f_screen:phone_screen_rapids_countepisodeunlock_locmap_living                  |          0.1045 |            -0.0286 |       37.5000 |            0.2000 | Screen     |
+| f_steps:fitbit_steps_intraday_rapids_countepisodesedentarybout                 |          0.1017 |             0.0018 |       42.5000 |            0.0000 | Steps      |

@@ -1,0 +1,10 @@
+Model,Default configuration,Optuna search space,Trials per outer split
+Dummy,{},none,0
+LogReg,"{""C"": 1.0}","C ~ logU[1e-4, 10]; L2, class-balanced, lbfgs",25
+XGBoost,"{""n_estimators"": 300, ""max_depth"": 4, ""learning_rate"": 0.05, ""subsample"": 0.8, ""colsample_bytree"": 0.8, ""min_child_weight"": 1.0, ""reg_lambda"": 1.0, ""reg_alpha"": 0.0001, ""gamma"": 0.0}","n_estimators 100-1000 (step 50); max_depth 2-8; learning_rate logU[0.01, 0.3]; subsample U[0.5, 1]; colsample_bytree U[0.1, 1]; min_child_weight logU[0.5, 20]; reg_lambda logU[1e-3, 10]; reg_alpha logU[1e-4, 10]; gamma U[0, 5]; scale_pos_weight = neg/pos (fixed)",40
+MLP-ERM,"{""hidden"": 128, ""n_layers"": 2, ""dropout"": 0.3, ""lr"": 0.001, ""weight_decay"": 0.0001, ""batch_size"": 256}","hidden {64,128,256,512}; layers 1-3; dropout U[0, 0.6]; lr logU[1e-4, 3e-3]; weight_decay logU[1e-6, 1e-2]; batch {128,256,512}; max 80 epochs, patience 15 on validation AUC",25
+MLP-GroupDRO,"{""hidden"": 128, ""n_layers"": 2, ""dropout"": 0.3, ""lr"": 0.001, ""weight_decay"": 0.0001, ""batch_size"": 256, ""eta"": 0.01}","+ eta logU[1e-3, 1]",25
+MLP-IRM,"{""hidden"": 128, ""n_layers"": 2, ""dropout"": 0.3, ""lr"": 0.001, ""weight_decay"": 0.0001, ""batch_size"": 256, ""irm_lambda"": 100.0, ""irm_anneal"": 20}","+ penalty weight logU[1, 1e4]; anneal epoch 0-40",25
+GRU,"{""hidden"": 32, ""num_layers"": 1, ""dropout"": 0.2, ""lr"": 0.0005, ""weight_decay"": 0.0001, ""batch_size"": 64}","hidden {16,32,64,128}; layers 1-2; dropout U[0, 0.5]; lr logU[1e-4, 3e-3]; weight_decay logU[1e-6, 1e-2]; batch {32,64,128}; max 60 epochs, patience 10",20
+Transformer,"{""d_model"": 64, ""nhead"": 4, ""num_layers"": 2, ""dim_feedforward"": 128, ""dropout"": 0.2, ""lr"": 0.0005, ""weight_decay"": 0.0001, ""batch_size"": 64}","d_model {32,64,128}; heads {2,4,8}; layers 1-3; feed-forward {64,128,256}; dropout U[0, 0.5]; lr logU[1e-4, 3e-3]; weight_decay logU[1e-6, 1e-2]; batch {32,64,128}",20
+All,"seeds=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; inner validation=20% of training participants",TPE sampler; objective = inner-validation ROC AUC; default enqueued as trial 0; median pruning for neural models,

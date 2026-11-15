@@ -1,0 +1,64 @@
+Analysis,Protocol,Family,Comparison,Years,Delta_AUC,CI_lo,CI_hi,p,Equivalent,p_Holm,Significant (Holm)
+main,Forward-chaining,vs XGBoost,Dummy - XGBoost,"2020, 2021",-0.0695,-0.1201,-0.0208,0.004,False,0.028,True
+main,Forward-chaining,vs XGBoost,LogReg - XGBoost,"2020, 2021",-0.0107,-0.0535,0.0338,0.634,False,1.0,False
+main,Forward-chaining,vs XGBoost,MLP-ERM - XGBoost,"2020, 2021",-0.0125,-0.0601,0.0341,0.603,False,1.0,False
+main,Forward-chaining,vs XGBoost,MLP-GroupDRO - XGBoost,"2020, 2021",-0.0012,-0.0457,0.0433,0.937,False,1.0,False
+main,Forward-chaining,vs XGBoost,MLP-IRM - XGBoost,"2020, 2021",0.0013,-0.0429,0.0485,0.973,False,1.0,False
+main,Forward-chaining,vs XGBoost,GRU - XGBoost,"2020, 2021",-0.0023,-0.051,0.0447,0.923,False,1.0,False
+main,Forward-chaining,vs XGBoost,Transformer - XGBoost,"2020, 2021",0.0028,-0.0514,0.0517,0.923,False,1.0,False
+main,Forward-chaining,DG vs ERM,MLP-GroupDRO - MLP-ERM,"2020, 2021",0.0113,-0.031,0.0516,0.595,False,1.0,False
+main,Forward-chaining,DG vs ERM,MLP-IRM - MLP-ERM,"2020, 2021",0.0138,-0.0297,0.0576,0.53,False,1.0,False
+main,Leave-one-year-out,vs XGBoost,Dummy - XGBoost,"2018, 2019, 2020, 2021",-0.0774,-0.1094,-0.0453,0.0005,False,0.0035,True
+main,Leave-one-year-out,vs XGBoost,LogReg - XGBoost,"2018, 2019, 2020, 2021",-0.0085,-0.035,0.0179,0.521,False,1.0,False
+main,Leave-one-year-out,vs XGBoost,MLP-ERM - XGBoost,"2018, 2019, 2020, 2021",-0.0153,-0.0456,0.0136,0.277,False,1.0,False
+main,Leave-one-year-out,vs XGBoost,MLP-GroupDRO - XGBoost,"2018, 2019, 2020, 2021",-0.0178,-0.0483,0.0117,0.254,False,1.0,False
+main,Leave-one-year-out,vs XGBoost,MLP-IRM - XGBoost,"2018, 2019, 2020, 2021",-0.0088,-0.0355,0.0193,0.522,False,1.0,False
+main,Leave-one-year-out,vs XGBoost,GRU - XGBoost,"2018, 2019, 2020, 2021",-0.0169,-0.0477,0.0146,0.289,False,1.0,False
+main,Leave-one-year-out,vs XGBoost,Transformer - XGBoost,"2018, 2019, 2020, 2021",-0.0094,-0.0427,0.024,0.574,False,1.0,False
+main,Leave-one-year-out,DG vs ERM,MLP-GroupDRO - MLP-ERM,"2018, 2019, 2020, 2021",-0.0025,-0.0319,0.0276,0.878,False,1.0,False
+main,Leave-one-year-out,DG vs ERM,MLP-IRM - MLP-ERM,"2018, 2019, 2020, 2021",0.0065,-0.0207,0.0349,0.635,False,1.0,False
+main,Participant-disjoint,vs XGBoost,Dummy - XGBoost,,-0.0768,-0.1455,-0.0049,0.036,False,0.252,False
+main,Participant-disjoint,vs XGBoost,LogReg - XGBoost,,0.0221,-0.031,0.0828,0.436,False,1.0,False
+main,Participant-disjoint,vs XGBoost,MLP-ERM - XGBoost,,0.0195,-0.0327,0.0749,0.457,False,1.0,False
+main,Participant-disjoint,vs XGBoost,MLP-GroupDRO - XGBoost,,0.01,-0.0473,0.0687,0.752,False,1.0,False
+main,Participant-disjoint,vs XGBoost,MLP-IRM - XGBoost,,0.0164,-0.037,0.0708,0.542,False,1.0,False
+main,Participant-disjoint,vs XGBoost,GRU - XGBoost,,-0.0183,-0.0827,0.0487,0.591,False,1.0,False
+main,Participant-disjoint,vs XGBoost,Transformer - XGBoost,,-0.0022,-0.0694,0.0689,0.949,False,1.0,False
+main,Participant-disjoint,DG vs ERM,MLP-GroupDRO - MLP-ERM,,-0.0095,-0.066,0.0416,0.693,False,1.0,False
+main,Participant-disjoint,DG vs ERM,MLP-IRM - MLP-ERM,,-0.0031,-0.0502,0.0444,0.907,False,1.0,False
+ex2018,Forward-chaining,vs XGBoost,Dummy - XGBoost,2021,-0.1139,-0.1773,-0.0517,0.002,False,0.014,True
+ex2018,Forward-chaining,vs XGBoost,LogReg - XGBoost,2021,0.0001,-0.042,0.0404,0.989,False,1.0,False
+ex2018,Forward-chaining,vs XGBoost,MLP-ERM - XGBoost,2021,-0.0171,-0.0641,0.0294,0.502,False,1.0,False
+ex2018,Forward-chaining,vs XGBoost,MLP-GroupDRO - XGBoost,2021,-0.0162,-0.0715,0.0338,0.513,False,1.0,False
+ex2018,Forward-chaining,vs XGBoost,MLP-IRM - XGBoost,2021,-0.0124,-0.0624,0.0326,0.626,False,1.0,False
+ex2018,Forward-chaining,vs XGBoost,GRU - XGBoost,2021,-0.0444,-0.102,0.0154,0.156,False,0.936,False
+ex2018,Forward-chaining,vs XGBoost,Transformer - XGBoost,2021,-0.0258,-0.094,0.0405,0.488,False,1.0,False
+ex2018,Forward-chaining,DG vs ERM,MLP-GroupDRO - MLP-ERM,2021,0.0009,-0.0565,0.05,0.979,False,1.0,False
+ex2018,Forward-chaining,DG vs ERM,MLP-IRM - MLP-ERM,2021,0.0047,-0.0439,0.0514,0.83,False,1.0,False
+ex2018,Leave-one-year-out,vs XGBoost,Dummy - XGBoost,"2019, 2020, 2021",-0.091,-0.1266,-0.0509,0.0005,False,0.0035,True
+ex2018,Leave-one-year-out,vs XGBoost,LogReg - XGBoost,"2019, 2020, 2021",-0.0002,-0.0288,0.0271,0.988,False,1.0,False
+ex2018,Leave-one-year-out,vs XGBoost,MLP-ERM - XGBoost,"2019, 2020, 2021",-0.0067,-0.0364,0.0258,0.681,False,1.0,False
+ex2018,Leave-one-year-out,vs XGBoost,MLP-GroupDRO - XGBoost,"2019, 2020, 2021",-0.0126,-0.0457,0.0198,0.455,False,1.0,False
+ex2018,Leave-one-year-out,vs XGBoost,MLP-IRM - XGBoost,"2019, 2020, 2021",-0.0135,-0.0436,0.0196,0.401,False,1.0,False
+ex2018,Leave-one-year-out,vs XGBoost,GRU - XGBoost,"2019, 2020, 2021",-0.0268,-0.0613,0.0087,0.131,False,0.786,False
+ex2018,Leave-one-year-out,vs XGBoost,Transformer - XGBoost,"2019, 2020, 2021",-0.025,-0.0658,0.014,0.207,False,1.0,False
+ex2018,Leave-one-year-out,DG vs ERM,MLP-GroupDRO - MLP-ERM,"2019, 2020, 2021",-0.0059,-0.0396,0.0253,0.689,False,1.0,False
+ex2018,Leave-one-year-out,DG vs ERM,MLP-IRM - MLP-ERM,"2019, 2020, 2021",-0.0068,-0.0391,0.0235,0.663,False,1.0,False
+ex2018,Participant-disjoint,vs XGBoost,Dummy - XGBoost,,-0.1025,-0.1853,-0.0252,0.01,False,0.07,False
+ex2018,Participant-disjoint,vs XGBoost,LogReg - XGBoost,,0.027,-0.0401,0.0941,0.442,False,1.0,False
+ex2018,Participant-disjoint,vs XGBoost,MLP-ERM - XGBoost,,0.0196,-0.0509,0.0849,0.574,False,1.0,False
+ex2018,Participant-disjoint,vs XGBoost,MLP-GroupDRO - XGBoost,,0.01,-0.0613,0.0807,0.835,False,1.0,False
+ex2018,Participant-disjoint,vs XGBoost,MLP-IRM - XGBoost,,0.018,-0.0588,0.087,0.613,False,1.0,False
+ex2018,Participant-disjoint,vs XGBoost,GRU - XGBoost,,-0.0146,-0.1052,0.0705,0.755,False,1.0,False
+ex2018,Participant-disjoint,vs XGBoost,Transformer - XGBoost,,0.0093,-0.0708,0.0846,0.811,False,1.0,False
+ex2018,Participant-disjoint,DG vs ERM,MLP-GroupDRO - MLP-ERM,,-0.0095,-0.0775,0.0628,0.772,False,1.0,False
+ex2018,Participant-disjoint,DG vs ERM,MLP-IRM - MLP-ERM,,-0.0016,-0.0797,0.0662,0.998,False,1.0,False
+bdi,Forward-chaining,vs XGBoost,Dummy - XGBoost,"2019, 2020, 2021",-0.093,-0.1856,0.0006,0.054,False,0.162,False
+bdi,Forward-chaining,vs XGBoost,LogReg - XGBoost,"2019, 2020, 2021",-0.0017,-0.0747,0.0727,0.949,False,1.0,False
+bdi,Forward-chaining,vs XGBoost,MLP-ERM - XGBoost,"2019, 2020, 2021",-0.0213,-0.1003,0.063,0.582,False,1.0,False
+bdi,Leave-one-year-out,vs XGBoost,Dummy - XGBoost,"2018, 2019, 2020, 2021",-0.0991,-0.174,-0.0215,0.012,False,0.036,True
+bdi,Leave-one-year-out,vs XGBoost,LogReg - XGBoost,"2018, 2019, 2020, 2021",0.0139,-0.0415,0.0722,0.624,False,1.0,False
+bdi,Leave-one-year-out,vs XGBoost,MLP-ERM - XGBoost,"2018, 2019, 2020, 2021",-0.0016,-0.0632,0.0615,0.981,False,1.0,False
+bdi,Participant-disjoint,vs XGBoost,Dummy - XGBoost,,-0.105,-0.2634,0.0604,0.219,False,0.657,False
+bdi,Participant-disjoint,vs XGBoost,LogReg - XGBoost,,-0.009,-0.1158,0.1116,0.877,False,0.877,False
+bdi,Participant-disjoint,vs XGBoost,MLP-ERM - XGBoost,,-0.0551,-0.192,0.084,0.437,False,0.874,False

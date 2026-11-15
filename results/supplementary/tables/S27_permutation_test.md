@@ -1,0 +1,6 @@
+**User-level label-permutation negative control (tuned XGBoost).**
+
+| split         |   mean |    std |    max |   count |   observed |   empirical_p |
+|:--------------|-------:|-------:|-------:|--------:|-----------:|--------------:|
+| main|fwd_2021 | 0.5084 | 0.0281 | 0.5911 |     200 |     0.5942 |        0.0050 |
+| main|pd       | 0.5121 | 0.0302 | 0.5821 |     200 |     0.5818 |        0.0149 |
